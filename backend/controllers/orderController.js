@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRETKEY)
 
 const placeOrder = async (req,res) => {
 
-    const frontend_url = "https://food-delivery-frontend-kf4q.onrender.com"
+    const frontend_url = "https://food-delivery-frontend-g67v.onrender.com"
     try {
         const newOrder = new orderModel({
             userId:req.body.userId,
